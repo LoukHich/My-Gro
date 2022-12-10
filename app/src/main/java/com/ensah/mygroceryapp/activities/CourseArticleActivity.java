@@ -62,12 +62,12 @@ public class CourseArticleActivity extends AppCompatActivity {
         articleListView.setAdapter(articleAdapter);
     }
 
-//    public void newArticle(View v) {
-//        Intent articleIntent = new Intent(CourseArticleActivity.this, ArticleActivity.class);
-//        articleIntent.putExtra(Article.COURSE_NAME, courseNameSelected);
-//        startActivity(articleIntent);
-//
-//    }
+    public void newArticle(View v) {
+         Intent articleIntent = new Intent(CourseArticleActivity.this, ArticleActivity.class);
+        articleIntent.putExtra(Article.COURSE_NAME, courseNameSelected);
+        startActivity(articleIntent);
+
+    }
 
     @Override
     protected void onResume() {
